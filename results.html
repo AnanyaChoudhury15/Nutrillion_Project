@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="container1">
+        <h2>RESULTS:</h2>
+        <table align="center" border="3" width="700px" height="400px" display="flex">
+            <th colspan="2">Your Health Results</th>
+            <tr>
+                <td><strong>Region:</strong></td>
+                <td><span id="regionResult"></span></td>
+            </tr>
+            <tr>
+                <td><strong>Age:</strong></td>
+                <td><span id="ageResult"></span></td>
+            </tr>
+            <tr>
+                <td><strong>Gender:</strong></td>
+                <td><span id="genderResult"></span></td>
+            </tr>
+            <tr>
+                <td><strong>BMI:</strong></td>
+                <td><span id="bmiResult"></span></td>
+            </tr>
+            <tr>
+                <td><strong>Category:</strong></td>
+                <td><span id="categoryResult"></span></td>
+            </tr>
+            <tr>
+                <td><strong>Diet Tip:</strong></td>
+                <td><span id="dietTipResult"></span></td>
+            </tr>
+        </table>
+        <button onclick="goBack()" style="margin: 30px; margin-left: 350px; background-color: tomato; justify-content: center;">Go Back</button>
+    </div>
+
+    <script src="result.js"></script>
+    <script>
+        // Function to navigate back to index.html
+        function goBack() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

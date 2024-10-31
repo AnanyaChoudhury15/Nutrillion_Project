@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrillion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body >
+    <div class="container">
+        <h1>NUTRILLION</h1>
+        <form id="bmiForm">
+            <label for="region" class="heading">Region:</label>
+            <select id="region" style="font-size: 18px;">
+                <option>--Select--</option>
+                <option value="North">North</option>
+                <option value="South">South</option>
+                <option value="East">East</option>
+                <option value="West">West</option>
+                <option value="Island">Island</option>
+            </select>
+            <label for="age" class="heading">Age:</label>
+            <input type="number" id="age" required>
+            <label class="heading">Gender:</label>
+            <label><input type="radio" name="gender" value="Male" required> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+            <label for="height" class="heading">Height (cm):</label>
+            <input type="number" id="height" required>
+            <label for="weight" class="heading">Weight (kg):</label>
+            <input type="number" id="weight" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
